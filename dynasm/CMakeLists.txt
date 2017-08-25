@@ -1,0 +1,15 @@
+Set(Previous_LuaJIT_Source ${LuaJIT_Source})
+
+AddFile(LuaJIT_Source Previous_LuaJIT_Source dasm_arm.h)
+AddFile(LuaJIT_Source Previous_LuaJIT_Source dasm_arm.lua)
+AddFile(LuaJIT_Source Previous_LuaJIT_Source dasm_mips.h)
+AddFile(LuaJIT_Source Previous_LuaJIT_Source dasm_mips.lua)
+AddFile(LuaJIT_Source Previous_LuaJIT_Source dasm_ppc.h)
+AddFile(LuaJIT_Source Previous_LuaJIT_Source dasm_ppc.lua)
+AddFile(LuaJIT_Source Previous_LuaJIT_Source dasm_proto.h)
+AddFile(LuaJIT_Source Previous_LuaJIT_Source dasm_x64.lua)
+AddFile(LuaJIT_Source Previous_LuaJIT_Source dasm_x86.h)
+AddFile(LuaJIT_Source Previous_LuaJIT_Source dasm_x86.lua)
+AddFile(LuaJIT_Source Previous_LuaJIT_Source dynasm.lua)
+
+Set(LuaJIT_Source ${Previous_LuaJIT_Source} PARENT_SCOPE)
