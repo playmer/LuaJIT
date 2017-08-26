@@ -18,7 +18,7 @@ SET ( DEPS
 )
 
 Add_Library(LuaJIT ${LuaJIT_Source})
-
+Target_Compile_Definitions(LuaJIT PUBLIC "_CRT_SECURE_NO_WARNINGS")
 
 If (${WIN32} AND CMAKE_SIZEOF_VOID_P EQUAL 4)
     target_include_directories(LuaJIT PRIVATE src)
