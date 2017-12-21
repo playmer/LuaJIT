@@ -69,7 +69,7 @@ target_sources(LuaJIT
 #    ${CMAKE_CURRENT_LIST_DIR}/host/buildvm_lib.c
 #    ${CMAKE_CURRENT_LIST_DIR}/host/buildvm_peobj.c
 #    ${CMAKE_CURRENT_LIST_DIR}/host/minilua.c
-  PUBLIC
+#  PUBLIC
     ${CMAKE_CURRENT_LIST_DIR}/lauxlib.h
     ${CMAKE_CURRENT_LIST_DIR}/lj_alloc.h
     ${CMAKE_CURRENT_LIST_DIR}/lj_arch.h

@@ -1,6 +1,6 @@
 target_sources(LuaJIT
   PRIVATE
-  PUBLIC
+#  PUBLIC
     ${CMAKE_CURRENT_LIST_DIR}/dasm_arm.h
     ${CMAKE_CURRENT_LIST_DIR}/dasm_mips.h
     ${CMAKE_CURRENT_LIST_DIR}/dasm_ppc.h
