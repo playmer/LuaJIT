@@ -1,167 +1,150 @@
-Set(Previous_LuaJIT_Source ${LuaJIT_Source})
-
-AddFile(LuaJIT_Source Previous_LuaJIT_Source .gitignore)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lauxlib.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lib_aux.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lib_base.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lib_bit.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lib_debug.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lib_ffi.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lib_init.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lib_io.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lib_jit.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lib_math.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lib_os.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lib_package.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lib_string.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lib_table.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj.supp)
-#AddFile(LuaJIT_Source Previous_LuaJIT_Source ljamalg.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_alloc.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_alloc.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_api.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_arch.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_asm.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_asm.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_asm_arm.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_asm_mips.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_asm_ppc.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_asm_x86.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_bc.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_bc.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_bcdump.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_bcread.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_bcwrite.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_carith.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_carith.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_ccall.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_ccall.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_ccallback.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_ccallback.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_cconv.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_cconv.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_cdata.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_cdata.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_char.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_char.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_clib.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_clib.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_cparse.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_cparse.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_crecord.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_crecord.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_ctype.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_ctype.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_debug.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_debug.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_def.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_dispatch.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_dispatch.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_emit_arm.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_emit_mips.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_emit_ppc.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_emit_x86.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_err.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_err.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_errmsg.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_ff.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_ffrecord.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_ffrecord.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_frame.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_func.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_func.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_gc.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_gc.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_gdbjit.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_gdbjit.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_ir.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_ir.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_ircall.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_iropt.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_jit.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_lex.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_lex.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_lib.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_lib.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_load.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_mcode.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_mcode.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_meta.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_meta.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_obj.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_obj.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_opt_dce.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_opt_fold.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_opt_loop.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_opt_mem.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_opt_narrow.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_opt_sink.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_opt_split.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_parse.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_parse.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_record.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_record.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_snap.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_snap.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_state.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_state.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_str.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_str.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_strscan.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_strscan.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_tab.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_tab.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_target.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_target_arm.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_target_mips.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_target_ppc.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_target_x86.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_trace.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_trace.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_traceerr.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_udata.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_udata.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_vm.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_vmevent.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_vmevent.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lj_vmmath.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lua.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lua.hpp)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source luaconf.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source luajit.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source luajit.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source lualib.h)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source Makefile)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source Makefile.dep)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source msvcbuild.bat)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source ps4build.bat)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source psvitabuild.bat)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source vm_arm.dasc)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source vm_mips.dasc)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source vm_ppc.dasc)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source vm_ppcspe.dasc)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source vm_x86.dasc)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source xedkbuild.bat)
-#AddFile(LuaJIT_Source Previous_LuaJIT_Source host/.gitignore)
-#AddFile(LuaJIT_Source Previous_LuaJIT_Source host/buildvm.c)
-#AddFile(LuaJIT_Source Previous_LuaJIT_Source host/buildvm.h)
-#AddFile(LuaJIT_Source Previous_LuaJIT_Source host/buildvm_asm.c)
-#AddFile(LuaJIT_Source Previous_LuaJIT_Source host/buildvm_fold.c)
-#AddFile(LuaJIT_Source Previous_LuaJIT_Source host/buildvm_lib.c)
-#AddFile(LuaJIT_Source Previous_LuaJIT_Source host/buildvm_peobj.c)
-#AddFile(LuaJIT_Source Previous_LuaJIT_Source host/genminilua.lua)
-#AddFile(LuaJIT_Source Previous_LuaJIT_Source host/minilua.c)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source host/README)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source jit/.gitignore)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source jit/bc.lua)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source jit/bcsave.lua)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source jit/dis_arm.lua)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source jit/dis_mips.lua)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source jit/dis_mipsel.lua)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source jit/dis_ppc.lua)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source jit/dis_x64.lua)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source jit/dis_x86.lua)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source jit/dump.lua)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source jit/v.lua)
-
-Set(LuaJIT_Source ${Previous_LuaJIT_Source} PARENT_SCOPE)
+target_sources(LuaJIT
+  PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}/lib_aux.c
+    ${CMAKE_CURRENT_LIST_DIR}/lib_base.c
+    ${CMAKE_CURRENT_LIST_DIR}/lib_bit.c
+    ${CMAKE_CURRENT_LIST_DIR}/lib_debug.c
+    ${CMAKE_CURRENT_LIST_DIR}/lib_ffi.c
+    ${CMAKE_CURRENT_LIST_DIR}/lib_init.c
+    ${CMAKE_CURRENT_LIST_DIR}/lib_io.c
+    ${CMAKE_CURRENT_LIST_DIR}/lib_jit.c
+    ${CMAKE_CURRENT_LIST_DIR}/lib_math.c
+    ${CMAKE_CURRENT_LIST_DIR}/lib_os.c
+    ${CMAKE_CURRENT_LIST_DIR}/lib_package.c
+    ${CMAKE_CURRENT_LIST_DIR}/lib_string.c
+    ${CMAKE_CURRENT_LIST_DIR}/lib_table.c
+#    ${CMAKE_CURRENT_LIST_DIR}/ljamalg.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_alloc.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_api.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_asm.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_bc.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_bcread.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_bcwrite.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_carith.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_ccall.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_ccallback.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_cconv.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_cdata.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_char.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_clib.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_cparse.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_crecord.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_ctype.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_debug.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_dispatch.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_err.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_ffrecord.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_func.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_gc.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_gdbjit.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_ir.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_lex.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_lib.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_load.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_mcode.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_meta.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_obj.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_opt_dce.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_opt_fold.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_opt_loop.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_opt_mem.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_opt_narrow.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_opt_sink.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_opt_split.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_parse.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_record.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_snap.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_state.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_str.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_strscan.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_tab.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_trace.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_udata.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_vmevent.c
+    ${CMAKE_CURRENT_LIST_DIR}/lj_vmmath.c
+    ${CMAKE_CURRENT_LIST_DIR}/luajit.c
+#    ${CMAKE_CURRENT_LIST_DIR}/buildvm.c
+#    ${CMAKE_CURRENT_LIST_DIR}/buildvm_asm.c
+#    ${CMAKE_CURRENT_LIST_DIR}/buildvm_fold.c
+#    ${CMAKE_CURRENT_LIST_DIR}/buildvm_lib.c
+#    ${CMAKE_CURRENT_LIST_DIR}/buildvm_peobj.c
+#    ${CMAKE_CURRENT_LIST_DIR}/minilua.c
+  PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/lauxlib.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_alloc.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_arch.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_asm.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_asm_arm.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_asm_mips.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_asm_ppc.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_asm_x86.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_bc.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_bcdump.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_carith.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_ccall.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_ccallback.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_cconv.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_cdata.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_char.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_clib.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_cparse.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_crecord.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_ctype.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_debug.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_def.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_dispatch.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_emit_arm.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_emit_mips.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_emit_ppc.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_emit_x86.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_err.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_errmsg.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_ff.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_ffrecord.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_frame.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_func.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_gc.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_gdbjit.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_ir.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_ircall.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_iropt.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_jit.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_lex.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_lib.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_mcode.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_meta.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_obj.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_parse.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_record.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_snap.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_state.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_str.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_strscan.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_tab.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_target.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_target_arm.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_target_mips.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_target_ppc.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_target_x86.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_trace.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_traceerr.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_udata.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_vm.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_vmevent.h
+    ${CMAKE_CURRENT_LIST_DIR}/lua.h
+    ${CMAKE_CURRENT_LIST_DIR}/lua.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/luaconf.h
+    ${CMAKE_CURRENT_LIST_DIR}/luajit.h
+    ${CMAKE_CURRENT_LIST_DIR}/lualib.h
+#    ${CMAKE_CURRENT_LIST_DIR}/buildvm.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_bcdef.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_ffdef.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_folddef.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_libdef.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_recdef.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_bcdef.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_ffdef.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_folddef.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_libdef.h
+    ${CMAKE_CURRENT_LIST_DIR}/lj_recdef.h
+)

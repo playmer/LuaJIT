@@ -1,21 +1,4 @@
-Set(Previous_LuaJIT_Source ${LuaJIT_Source})
-
-AddFile(LuaJIT_Source Previous_LuaJIT_Source bluequad-print.css)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source bluequad.css)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source changes.html)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source contact.html)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source extensions.html)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source ext_c_api.html)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source ext_ffi.html)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source ext_ffi_api.html)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source ext_ffi_semantics.html)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source ext_ffi_tutorial.html)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source ext_jit.html)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source faq.html)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source install.html)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source luajit.html)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source running.html)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source status.html)
-AddFile(LuaJIT_Source Previous_LuaJIT_Source img/contact.png)
-
-Set(LuaJIT_Source ${Previous_LuaJIT_Source} PARENT_SCOPE)
+target_sources(LuaJIT
+  PRIVATE
+  PUBLIC
+)
