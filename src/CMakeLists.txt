@@ -63,12 +63,12 @@ target_sources(LuaJIT
     ${CMAKE_CURRENT_LIST_DIR}/lj_vmevent.c
     ${CMAKE_CURRENT_LIST_DIR}/lj_vmmath.c
     ${CMAKE_CURRENT_LIST_DIR}/luajit.c
-#    ${CMAKE_CURRENT_LIST_DIR}/buildvm.c
-#    ${CMAKE_CURRENT_LIST_DIR}/buildvm_asm.c
-#    ${CMAKE_CURRENT_LIST_DIR}/buildvm_fold.c
-#    ${CMAKE_CURRENT_LIST_DIR}/buildvm_lib.c
-#    ${CMAKE_CURRENT_LIST_DIR}/buildvm_peobj.c
-#    ${CMAKE_CURRENT_LIST_DIR}/minilua.c
+#    ${CMAKE_CURRENT_LIST_DIR}/host/buildvm.c
+#    ${CMAKE_CURRENT_LIST_DIR}/host/buildvm_asm.c
+#    ${CMAKE_CURRENT_LIST_DIR}/host/buildvm_fold.c
+#    ${CMAKE_CURRENT_LIST_DIR}/host/buildvm_lib.c
+#    ${CMAKE_CURRENT_LIST_DIR}/host/buildvm_peobj.c
+#    ${CMAKE_CURRENT_LIST_DIR}/host/minilua.c
   PUBLIC
     ${CMAKE_CURRENT_LIST_DIR}/lauxlib.h
     ${CMAKE_CURRENT_LIST_DIR}/lj_alloc.h
@@ -136,15 +136,15 @@ target_sources(LuaJIT
     ${CMAKE_CURRENT_LIST_DIR}/luaconf.h
     ${CMAKE_CURRENT_LIST_DIR}/luajit.h
     ${CMAKE_CURRENT_LIST_DIR}/lualib.h
-#    ${CMAKE_CURRENT_LIST_DIR}/buildvm.h
-    ${CMAKE_CURRENT_LIST_DIR}/lj_bcdef.h
-    ${CMAKE_CURRENT_LIST_DIR}/lj_ffdef.h
-    ${CMAKE_CURRENT_LIST_DIR}/lj_folddef.h
-    ${CMAKE_CURRENT_LIST_DIR}/lj_libdef.h
-    ${CMAKE_CURRENT_LIST_DIR}/lj_recdef.h
-    ${CMAKE_CURRENT_LIST_DIR}/lj_bcdef.h
-    ${CMAKE_CURRENT_LIST_DIR}/lj_ffdef.h
-    ${CMAKE_CURRENT_LIST_DIR}/lj_folddef.h
-    ${CMAKE_CURRENT_LIST_DIR}/lj_libdef.h
-    ${CMAKE_CURRENT_LIST_DIR}/lj_recdef.h
+#    ${CMAKE_CURRENT_LIST_DIR}/host/buildvm.h
+    ${CMAKE_CURRENT_LIST_DIR}/platform/Win32/lj_bcdef.h
+    ${CMAKE_CURRENT_LIST_DIR}/platform/Win32/lj_ffdef.h
+    ${CMAKE_CURRENT_LIST_DIR}/platform/Win32/lj_folddef.h
+    ${CMAKE_CURRENT_LIST_DIR}/platform/Win32/lj_libdef.h
+    ${CMAKE_CURRENT_LIST_DIR}/platform/Win32/lj_recdef.h
+    ${CMAKE_CURRENT_LIST_DIR}/platform/Win64/lj_bcdef.h
+    ${CMAKE_CURRENT_LIST_DIR}/platform/Win64/lj_ffdef.h
+    ${CMAKE_CURRENT_LIST_DIR}/platform/Win64/lj_folddef.h
+    ${CMAKE_CURRENT_LIST_DIR}/platform/Win64/lj_libdef.h
+    ${CMAKE_CURRENT_LIST_DIR}/platform/Win64/lj_recdef.h
 )
