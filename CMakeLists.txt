@@ -9,10 +9,14 @@ target_compile_definitions(LuaJIT PUBLIC _CRT_SECURE_NO_WARNINGS)
 
 target_include_directories(LuaJIT PRIVATE src)
 
-if (${WIN32} AND CMAKE_SIZEOF_VOID_P EQUAL 4)
-    set(platformPath Win32)
-elseif(${WIN32} AND CMAKE_SIZEOF_VOID_P EQUAL 8)
-    set(platformPath Win64)
+if (CMAKE_SYSTEM_NAME STREQUAL Windows)
+  if (${CMAKE_CXX_COMPILER_ID} STREQUAL MSVC)
+    if (CMAKE_SIZEOF_VOID_P EQUAL 4)
+      set(platformPath Win32)
+    elseif(CMAKE_SIZEOF_VOID_P EQUAL 8)
+      set(platformPath Win64)
+    endif()
+  endif()
 endif()
 
 target_include_directories(LuaJIT PRIVATE src/platform/${platformPath})
